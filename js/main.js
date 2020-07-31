@@ -1,3 +1,4 @@
+let manager = new GameManager('MOUNTION SHOP.RAIN');
 display(manager.getHtml());
 function display(table) {
     document.getElementById('result').innerHTML = table;
@@ -14,4 +15,9 @@ function addGame() {
     manager.addGame(game);
     display(manager.getHtml());
     document.getElementById('form-add').reset();
+}
+display(manager.getHtml());
+function deleteGame(id) {
+    manager.deleteGame(id);
+    display(manager.getHtml());
 }
