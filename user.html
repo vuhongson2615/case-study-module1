@@ -15,15 +15,26 @@
 
 
 </head>
-<body>
+<body onload="">
 <div class="container">
     <h3 style="text-align: center">Chào Mừng Bạn Đến Với</h3>
     <h2 style="text-align: center">MOUNTAINSHOP</h2>
     <h4 style="text-align: center">Chúc bạn mua sắm vui vẻ ^_^</h4>
     <div id="game-all" class="row"></div>
 </div>
+
+<audio controls>
+    <source src="nhacnen.mp3" type="audio/ogg">
+
+</audio>
+<iframe src="nhacnen.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+
 <script>
-    // let Game = new Game();
+    function audio (){
+        let html =  `<audio>`
+
+    }
+
     let manager = new GameManager("MountainShop.Rain");
     manager.data = loadData();
 

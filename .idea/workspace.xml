@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="165e6bba-9c83-4c43-b05c-5f6a5d7966e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/wizard-book.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nhacnen.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/game.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/gameManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/gameManager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596178183937</updated>
       <workItem from="1596178185501" duration="12893000" />
+      <workItem from="1596464211509" duration="338000" />
     </task>
     <servers />
   </component>
