@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/css.css">
 <body>
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
             <form id="form-add" class="mountain-shop">
                 <fieldset>
-                    <legend >ADD GAME</legend>
-                    <input class="form-group form-control" id="game-name" placeholder="Game Name" required>
-                    <input class="form-group form-control" id="game-img" placeholder="Game Img" required>
-                    <input class="form-group form-control" id="game-price" placeholder="Game Price" required>
-                    <input class="form-group form-control" id="game-version" placeholder="Game version" required>
-                    <input class="form-group form-control" id="game-quality" placeholder="Game quality" required>
-                    <input class="form-group form-control" id="game-sell" placeholder="Game selled" required>
-                    <input class="form-group form-control" id="game-desc" placeholder="Game description" required>
-                    <button class="btn btn-warning" type="button" onclick="addGame()">Add</button>
+                    <legend>ADD GAME</legend>
+                    <label>Game Name</label>
+                    <input class="form-group form-control" id="game-name" placeholder="Game Name">
+                    <input class="form-group form-control" id="game-img" placeholder="Game Img">
+                    <input class="form-group form-control" id="game-price" placeholder="Game Price">
+                    <input class="form-group form-control" id="game-version" placeholder="Game version">
+                    <input class="form-group form-control" id="game-quality" placeholder="Game quality">
+                    <input class="form-group form-control" id="game-sell" placeholder="Game selled">
+                    <input class="form-group form-control" id="game-desc" placeholder="Game description">
+                    <button class="btn btn-success" type="submit" onclick="addGame()">Add</button>
                 </fieldset>
             </form>
+
         </div>
     </div>
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -35,7 +51,7 @@
                 <div class="modal-body">
                     <form id="form-edit" class="mountain-shop">
                         <fieldset>
-                            <legend >EDIT GAME</legend>
+                            <legend>EDIT GAME</legend>
                             <input class="form-group form-control" id="edit-name" placeholder="Game Name">
                             <input class="form-group form-control" id="edit-img" placeholder="Game Img">
                             <input class="form-group form-control" id="edit-price" placeholder="Game Price">
@@ -47,7 +63,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal"onclick="editGame()">Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="editGame()">Save
+                    </button>
                 </div>
             </div>
         </div>
@@ -57,9 +74,11 @@
     </div>
 </div>
 </div>
-<div id="result"></div>
+<div class="container">
+    <div id="result"></div>
+</div>
 <script src="js/game.js"></script>
-<script src="js/GameManager.js"></script>
+<script src="js/gameManager.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

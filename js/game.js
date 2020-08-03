@@ -1,79 +1,74 @@
-class Game{
-    get img() {
-        return this._img;
-    }
-
-    set img(value) {
-        this._img = value;
-    }
-
+class Game {
     get name() {
         return this._name;
     }
-
     set name(value) {
         this._name = value;
     }
-
+    get img() {
+        return this._img;
+    }
+    set img(value) {
+        this._img = value;
+    }
     get price() {
         return this._price;
     }
-
     set price(value) {
         this._price = value;
     }
-
     get version() {
         return this._version;
     }
-
     set version(value) {
         this._version = value;
     }
-
     get quality() {
         return this._quality;
     }
-
     set quality(value) {
         this._quality = value;
     }
-
     get sell() {
         return this._sell;
     }
-
     set sell(value) {
         this._sell = value;
     }
-
     get desc() {
         return this._desc;
     }
-
     set desc(value) {
         this._desc = value;
     }
-    constructor(img,name,price,version,quality,sell,desc) {
-        this._img = img;
+    constructor(name, img, price, version, quality, sell, desc) {
         this._name = name;
+        this._img = img;
         this._price = price;
         this._version = version;
         this._quality = quality;
         this._sell = sell;
         this._desc = desc;
     }
-    getHTML(){
-        let html = `<td>
-                        <tr>${this.img}</tr>
-                        <tr>${this.name}</tr>
-                        <tr>${this.price}</tr>
-                        <tr>${this.version}</tr>
-                        <tr>${this.quality}</tr>
-                        <tr>${this.sell}</tr>
-                        <tr>${this.desc}</tr>
-                    </td>`
-        return html;
-
+    getHTML() {
+        return `
+                    <td>
+                        <img src="${this._img}" >
+                    </td>
+                   <td>${this._name}</td>              
+                   <td>${this._price}</td>              
+                   <td>${this._version}</td>              
+                   <td>${this._quality}</td>              
+                   <td>${this._sell}</td>              
+                   <td>${this._desc}</td>`;
+    }
+    updateGame(name,img,price, version, quality, sell, desc){
+        this.name = name;
+        this.img = img;
+        this.price = price;
+        this.version = version;
+        this.quality = quality;
+        this.sell = sell;
+        this.desc = desc;
     }
 }

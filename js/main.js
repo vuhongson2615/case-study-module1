@@ -1,7 +1,11 @@
+const GAME = 'game';
 let manager = new GameManager('MOUNTION SHOP.RAIN');
+manager.data = loadData();
+manager.init();
 display(manager.getHtml());
 function display(table) {
     document.getElementById('result').innerHTML = table;
+    saveData();
 }
 function addGame() {
     let name = document.getElementById('game-name').value;
@@ -12,9 +16,15 @@ function addGame() {
     let sell = document.getElementById('game-sell').value;
     let desc = document.getElementById('game-desc').value;
     let game = new Game(name, img, price, version, quality, sell, desc);
-    manager.addGame(game);
-    display(manager.getHtml());
-    document.getElementById('form-add').reset();
+    if((name != '') && (price != '') && (img != '')) {
+        manager.addGame(game);
+        display(manager.getHtml());
+        document.getElementById('form-add').reset();
+
+    } else {
+        alert('Bạn không được để rỗng: Game Name, Game Price , Game Image');
+    }
+
 }
 display(manager.getHtml());
 function deleteGame(id) {
@@ -44,4 +54,10 @@ function editGame() {
     manager.games[countId].updateGame(name, img, price, version, quality, sell, desc)
     display(manager.getHtml());
     document.getElementById('form-edit').reset();
+}
+function saveData() {
+    localStorage.setItem(GAME, JSON.stringify(manager.games));
+}
+function loadData() {
+    return localStorage.hasOwnProperty(GAME) ? JSON.parse(localStorage.getItem(GAME)) : [];
 }

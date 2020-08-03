@@ -1,0 +1,27 @@
+img {
+    vertical-align: middle;
+    height: 82px;
+    width: 90px;
+}
+body{
+
+    background-image: url("wizard-book.jpg");
+}
+.col-md-6{
+    background-color: white;
+    margin-top: 20px;
+    border-radius:15px;
+}
+
+.table{
+    background-color: white;
+    margin-top: 20px;
+
+}
+.btn:not(:disabled):not(.disabled){
+    margin-bottom: 15px;
+}
+
+#th-action{
+    text-align: center;
+}
