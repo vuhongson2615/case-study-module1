@@ -47,4 +47,12 @@ class GameManager {
     getGameById(id){
         return this.games[id];
     }
+
+    getHtmlViewUser() {
+        let table = ``;
+        for (let i = 0; i < this.games.length; i++) {
+            table += "<div class='col-md-3 text-center'>" + this.games[i].getHtmlViewUser() + '</div>';
+        }
+        return table;
+    }
 }
