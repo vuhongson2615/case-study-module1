@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Admin</title>
+    <title>MountainShop.Rain</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="js/game.js"></script>
     <script src="js/gameManager.js"></script>
     <script src="js/datagame.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+<!--    <link rel="stylesheet" href="css/css.css">-->
 
 
 </head>
 <body>
 <div class="container">
-    <h3>Toàn bộ các sản phẩm</h3>
+    <h3 style="text-align: center">Chào Mừng Bạn Đến Với</h3>
+    <h2 style="text-align: center">MOUNTAINSHOP</h2>
+    <h4 style="text-align: center">Chúc bạn mua sắm vui vẻ ^_^</h4>
     <div id="game-all" class="row"></div>
 </div>
 <script>
@@ -29,5 +32,12 @@
 
     function display(table) {
         document.getElementById('game-all').innerHTML = table;
+    }
+    function priceGame(){
+          prompt('vui lòng nhập tên của bạn ')
+            prompt('vui lòng nhập số điện thoại của bạn')
+        alert('cảm ơn bạn đã mua hàng hệ thống' +
+            ' sẽ tìm đến liên hệ với bạn sớm nhất có thể')
+
     }
 </script>

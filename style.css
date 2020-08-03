@@ -1,0 +1,11 @@
+img {
+    border: 0;
+    width: 207px;
+    height: 144px;
+    border: solid black;
+    padding: 6px;
+}
+.container.h3{
+    font-size: 44px;
+    text-align: center;
+}

@@ -78,7 +78,11 @@ class Game {
                         <div class="card-body">
                             <h5 class="card-title">${this.name}</h5>
                             <p class="card-text">${this.price}</p>
-                            <a href="#" class="btn btn-primary">Chi tiết</a>
+                            <p class="card-text">${this.version}</p>
+                            <p class="card-text">${this.quality}</p>
+                            <p class="card-text">${this.sell}</p>
+                            <p class="card-text">${this.desc}</p>
+                            <a class="btn btn-primary" onclick="priceGame()">Mua</a>
                         </div>
                     </div>
                    `;

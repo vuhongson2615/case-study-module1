@@ -3,6 +3,13 @@ img {
     height: 82px;
     width: 90px;
 }
+/*img {*/
+/*    border: 0;*/
+/*    width: 207px;*/
+/*    height: 144px;*/
+/*    border: solid black;*/
+/*    padding: 6px;*/
+/*}*/
 body{
 
     background-image: url("wizard-book.jpg");
